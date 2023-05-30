@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.7",
+    "dotenv": "^16.1.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mysql2": "^3.3.3",
+    "sequelize": "^6.31.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "fitsync",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshallpeters5/FitSync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marshallpeters5/FitSync/issues"
+  },
+  "homepage": "https://github.com/marshallpeters5/FitSync#readme"
+}
