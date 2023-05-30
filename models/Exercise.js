@@ -24,7 +24,7 @@ Exercise.init(
       allowNull: false,
     },
     difficulty: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER(10),
       allowNull: false,
     },
   },
