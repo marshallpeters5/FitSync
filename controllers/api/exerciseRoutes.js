@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Exercise } = require("../models");
+const { Exercise } = require("../../models");
 
 // Middleware for authorization check
 const checkAuthorization = async (req, res, next) => {
@@ -72,6 +72,10 @@ router.get("/search", async (req, res) => {
 // Create a new exercise. //
 router.post("/", async (req, res) => {
   try {
+    const existingExercise = await Exercise.findOne({ where: { name } });
+    if (existingExercise) {
+      return res.status(400).json({ error: "This exercise already exists" });
+    }
     const { name, description, category, difficulty } = req.body;
     const exercise = await Exercise.create({
       name,
@@ -80,10 +84,6 @@ router.post("/", async (req, res) => {
       difficulty,
     });
     // Check if an exercise with the same name already exists
-    const existingExercise = await Exercise.findOne({ where: { name } });
-    if (existingExercise) {
-      return res.status(400).json({ error: "This exercise already exists" });
-    }
     res.status(201).json(exercise);
   } catch (err) {
     console.error(err);
