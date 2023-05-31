@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const User = require('./User');
 
 class Exercise extends Model {}
 
@@ -24,13 +25,17 @@ Exercise.init(
       allowNull: false,
     },
     difficulty: {
-      type: DataTypes.INTEGER(10),
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     author: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
-    }
+      references: {
+        model: User,
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
@@ -40,5 +45,7 @@ Exercise.init(
     modelName: 'exercise',
   }
 );
+
+Exercise.belongsTo(User, { foreignKey: 'author' });
 
 module.exports = Exercise;
