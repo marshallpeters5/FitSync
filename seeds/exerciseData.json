@@ -23,7 +23,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 3,
     "name": "Tricep Dips",
     "description": "Sit on a sturdy chair or bench with your hands gripping the edge, fingers facing forward.
     Extend your legs out in front of you, keeping your feet flat on the floor.
@@ -36,7 +36,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 4,
     "name": "Close Grip Bench Press",
     "description": "Lie on a flat bench with your hands shoulder-width apart, palms facing each other.
     Unrack the barbell and lower it to your chest, keeping your elbows close to your body.
@@ -48,7 +48,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 5,
     "name": "Dumbbell Lateral Raises",
     "description": "Stand with feet shoulder-width apart, holding a dumbbell in each hand, palms facing inward.
     Lift your arms out to the sides until they are parallel to the floor.
@@ -60,7 +60,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 6,
     "name": "Overhead Press",
     "description": "Stand with feet shoulder-width apart, holding a barbell at shoulder level, palms facing forward.
     Press the barbell overhead, fully extending your arms.
@@ -72,7 +72,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 7,
     "name": "",
     "description": "",
     "category": "",
@@ -80,7 +80,7 @@
     "author": ""
 },
 {
-    "id": 2,
+    "id": 8,
     "name": "Superman Exercise",
     "description": "Lie facedown on a mat with your arms extended overhead and your legs straight.
     Lift your chest, arms, and legs off the ground, squeezing your lower back.
@@ -92,7 +92,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 9,
     "name": "Barbell Deadlift",
     "description": "Stand with feet hip-width apart, toes under the barbell.
     Bend your knees, keeping your back straight, and grip the barbell with hands slightly wider than shoulder-width apart.
@@ -106,7 +106,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 10,
     "name": " Bent-Over Dumbbell Rows",
     "description": "Stand with feet shoulder-width apart, holding a dumbbell in each hand, palms facing your body.
     Bend forward at the hips, keeping your back straight, until your torso is nearly parallel to the ground.
@@ -119,7 +119,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 11,
     "name": "Pull-Ups",
     "description": "Hang from a pull-up bar with an overhand grip, hands wider than shoulder-width apart.
     Pull yourself upward, leading with your chest, until your chin clears the bar.
@@ -131,7 +131,7 @@
     "author": "ALvin"
 },
 {
-    "id": 2,
+    "id": 12,
     "name": "Push-Ups",
     "description": "Start in a high plank position with your hands slightly wider than shoulder-width apart.
     Lower your body until your chest nearly touches the ground, keeping your elbows at a 45-degree angle.
@@ -143,7 +143,7 @@
     "author": ""
 },
 {
-    "id": 2,
+    "id": 13,
     "name": "Barbell Bench Press",
     "description":"Lie on a flat bench with your feet on the ground and grip the barbell with hands slightly wider than shoulder-width apart.
     Lower the barbell to your chest, keeping your elbows at a 45-degree angle.
@@ -155,7 +155,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 14,
     "name": " Crunches",
     "description": "Lie on your back with your knees bent and feet flat on the ground.
     Place your hands behind your head or cross them over your chest.
@@ -168,7 +168,7 @@
     "author": ""
 },
 {
-    "id": 2,
+    "id": 15,
     "name": "Russin Twist",
     "description": "Sit on the ground with your knees bent and feet lifted a few inches off the floor.
     Lean back slightly while maintaining a straight back and engage your core.
@@ -180,7 +180,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 16,
     "name": "Side Plank",
     "description": "Lie on your side with your forearm on the ground and elbow directly under your shoulder.
     Lift your hips off the ground, creating a straight line from head to feet.
@@ -192,7 +192,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 17,
     "name": "Bicycle Crunches",
     "description": "Lie on your back with your knees bent and hands behind your head.
     Lift your shoulder blades off the ground and bring your left elbow towards your right knee while straightening your left leg.
@@ -204,7 +204,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 18,
     "name": "Glute Bridge",
     "description": "Lie on your back with your knees bent and feet flat on the ground.
     Lift your hips off the ground until your body forms a straight line from knees to shoulders.
@@ -217,7 +217,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 19,
     "name": "Barbell Hip Thrust",
     "description": "Sit on the ground with your upper back against a bench and place a barbell across your hips.
     Roll the barbell towards you and position it on your lower abdomen.
@@ -230,7 +230,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 20,
     "name": "Quadriceps (thighs):",
     "description": " Bodyweight Squats",
     "category": "Lower your body down into a squat position by bending your knees and pushing your hips back.
@@ -242,7 +242,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 21,
     "name": " Barbell Front Squats",
     "description": "Stand with feet shoulder-width apart and place the barbell across the front of your shoulders, resting it on your fingertips.
     Lower your body down into a squat position by bending your knees and pushing your hips back.
@@ -255,7 +255,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 22,
     "name": "Bodyweight Lunges",
     "description": "Stand with feet hip-width apart.
     Take a step forward with your right foot and lower your body down until your front knee is bent at a 90-degree angle.
@@ -269,7 +269,7 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
+    "id": 23,
     "name": "Romanian Deadlifts",
     "description": "Stand with feet hip-width apart, holding a barbell with an overhand grip in front of your thighs.
     Hinge at the hips, keeping your back straight, and lower the barbell down your legs.
@@ -281,7 +281,7 @@
     "author": "Alvin"
 },
 {
-    "id": ,
+    "id": 24,
     "name": "Wrist Curl",
     "description": "Sit on a bench or chair with your forearm resting on your thigh, palm facing upward.
     Hold a dumbbell in your hand and allow your wrist to extend, letting the weight roll towards your fingers.
@@ -293,7 +293,7 @@
     "author": "Alvin"
 },
 {
-    "id": ,
+    "id": 25,
     "name": "Farmer's Walk",
     "description": "Hold a heavy dumbbell or kettlebell in each hand, with your arms fully extended by your sides.
     Walk forward with a straight posture, taking short and controlled steps.
@@ -304,7 +304,7 @@
     "author": "Alvin"
 },
 {
-    "id": ,
+    "id": 26,
     "name": "Standing Calf Raise",
     "description": "Stand on the edge of a step or platform with your heels hanging off, holding onto a railing or wall for support.
     Rise up onto your toes as high as possible, lifting your body weight with your calves.
@@ -315,7 +315,7 @@
     "author": "Alvin"
 },
 {
-    "id": ,
+    "id": 27,
     "name": "Barbell Calf Raises",
     "description": "Place a barbell across your upper back, resting it on your traps.
     Stand on a block or weight plates with the balls of your feet, keeping your heels suspended.
