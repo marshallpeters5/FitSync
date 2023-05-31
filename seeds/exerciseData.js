@@ -1,4 +1,4 @@
-[
+var exerciseData = [
 {
     "id": 1,
     "name": "Standing dumbell Curls ",
@@ -18,12 +18,7 @@
 {
     "id": 3,
     "name": "Tricep Dips",
-    "description": "Sit on a sturdy chair or bench with your hands gripping the edge, fingers facing forward.
-    Extend your legs out in front of you, keeping your feet flat on the floor.
-    Lower your body by bending your elbows until your upper arms are parallel to the ground.
-    Push yourself back up to the starting position using your triceps.
-    Repeat for the desired number of repetitions.
-    ",
+    "description": "Sit on a sturdy chair or bench with your hands gripping the edge, fingers facing forward. Extend your legs out in front of you, keeping your feet flat on the floor. Lower your body by bending your elbows until your upper arms are parallel to the ground. Push yourself back up to the starting position using your triceps.Repeat for the desired number of repetitions.",
     "category": "Triceps (arms)",
     "difficulty":4 ,
     "author": "Alvin"
@@ -31,15 +26,16 @@
 {
     "id": 4,
     "name": "Close Grip Bench Press",
-    "description": "Lie on a flat bench with your hands shoulder-width apart, palms facing each other.
+    "description": `Lie on a flat bench with your hands shoulder-width apart, palms facing each other.
     Unrack the barbell and lower it to your chest, keeping your elbows close to your body.
     Push the barbell back up to the starting position using your triceps.
     Repeat for the desired number of repetitions.
-    ",
+    `,
     "category": "Triceps",
     "difficulty": 8,
     "author": "Alvin"
-},
+}
+/*,
 {
     "id": 5,
     "name": "Dumbbell Lateral Raises",
@@ -71,7 +67,8 @@
     "category": "Cardio",
     "difficulty": 1,
     "author": "Jai"
-},
+}
+,
 {
     "id": 8,
     "name": "Superman Exercise",
@@ -318,5 +315,6 @@
     "category": "Calves",
     "difficulty":8 ,
     "author": "Alvin"
-}
+} */
 ]
+module.exports = exerciseData;
