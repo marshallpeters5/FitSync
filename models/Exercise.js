@@ -27,6 +27,10 @@ Exercise.init(
       type: DataTypes.INTEGER(10),
       allowNull: false,
     },
+    author: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   },
   {
     sequelize,
