@@ -77,11 +77,13 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ error: "This exercise already exists" });
     }
     const { name, description, category, difficulty } = req.body;
+    const userId = req.session.user && req.session.user.id;
     const exercise = await Exercise.create({
       name,
       description,
       category,
       difficulty,
+      author: userId,
     });
     // Check if an exercise with the same name already exists
     res.status(201).json(exercise);
