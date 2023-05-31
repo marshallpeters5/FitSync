@@ -281,11 +281,50 @@
     "author": "Alvin"
 },
 {
-    "id": 2,
-    "name": "",
-    "description": "",
-    "category": "",
-    "difficulty": ,
+    "id": ,
+    "name": "Wrist Curl",
+    "description": "Sit on a bench or chair with your forearm resting on your thigh, palm facing upward.
+    Hold a dumbbell in your hand and allow your wrist to extend, letting the weight roll towards your fingers.
+    Curl your wrist upward, lifting the dumbbell as high as possible.
+    Slowly lower the dumbbell back down to the starting position.
+    Repeat for the desired number of repetitions, then switch to the other hand.",
+    "category": "Forearms",
+    "difficulty":4 ,
     "author": "Alvin"
 },
+{
+    "id": ,
+    "name": "Farmer's Walk",
+    "description": "Hold a heavy dumbbell or kettlebell in each hand, with your arms fully extended by your sides.
+    Walk forward with a straight posture, taking short and controlled steps.
+    Maintain a strong grip on the weights throughout the exercise.
+    Walk for a specific distance or time, challenging your forearms and grip strength.",
+    "category": "Forearms",
+    "difficulty":8 ,
+    "author": "Alvin"
+},
+{
+    "id": ,
+    "name": "Standing Calf Raise",
+    "description": "Stand on the edge of a step or platform with your heels hanging off, holding onto a railing or wall for support.
+    Rise up onto your toes as high as possible, lifting your body weight with your calves.
+    Hold the contraction at the top for a moment, then lower your heels back down below the step.
+    Repeat for the desired number of repetitions.",
+    "category": "Calves",
+    "difficulty":4 ,
+    "author": "Alvin"
+},
+{
+    "id": ,
+    "name": "Barbell Calf Raises",
+    "description": "Place a barbell across your upper back, resting it on your traps.
+    Stand on a block or weight plates with the balls of your feet, keeping your heels suspended.
+    Rise up onto your toes, lifting your body weight with your calves.
+    Hold the contraction at the top for a moment, then lower your heels back down below the block.
+    Repeat for the desired number of repetitions.",
+    "category": "Calves",
+    "difficulty":8 ,
+    "author": "Alvin"
+},
+
 
