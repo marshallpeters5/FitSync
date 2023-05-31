@@ -1,9 +1,8 @@
+[
 {
     "id": 1,
     "name": "Standing dumbell Curls ",
-    "description": "Curl the dumbbells upward, keeping your elbows close to your sides.
-    Slowly lower the weights back down to the starting position.
-    Repeat for the desired number of repetitions.",
+    "description": "Curl the dumbbells upward, keeping your elbows close to your sides. Slowly lower the weights back down to the starting position. Repeat for the desired number of repetitions.",
     "category": "Biceps (Arms)",
     "difficulty": 4,
     "author": "Alvin"
@@ -11,12 +10,7 @@
 {
     "id": 2,
     "name": "Barbell Preacher Curls",
-    "description": "Sit on a preacher bench with your upper arms resting on the pad and your chest against it.
-    Grip the barbell with an underhand grip, shoulder-width apart.
-    Curl the barbell upwards, keeping your upper arms stationary.
-    Squeeze your biceps at the top of the movement, then slowly lower the barbell back down.
-    Repeat for the desired number of repetitions.
-    ",
+    "description": "Sit on a preacher bench with your upper arms resting on the pad and your chest against it. Grip the barbell with an underhand grip, shoulder-width apart. Curl the barbell upwards, keeping your upper arms stationary. Squeeze your biceps at the top of the movement, then slowly lower the barbell back down. Repeat for the desired number of repetitions.",
     "category": "Biceps (arms)",
     "difficulty":8 ,
     "author": "Alvin"
@@ -72,11 +66,11 @@
 },
 {
     "id": 7,
-    "name": "",
-    "description": "",
-    "category": "",
-    "difficulty": ,
-    "author": ""
+    "name": "Jumping Jacks",
+    "description": "You know how to do these, I'm sure.",
+    "category": "Cardio",
+    "difficulty": 1,
+    "author": "Jai"
 },
 {
     "id": 8,
@@ -127,7 +121,7 @@
     ",
     "category": "Latissimus Dorsi & Rhomboids (back & shoulder blades):",
     "difficulty":8 ,
-    "author": "ALvin"
+    "author": "Alvin"
 },
 {
     "id": 12,
@@ -139,7 +133,7 @@
     ",
     "category": "Pectorals (chest):",
     "difficulty": 4,
-    "author": ""
+    "author": "Marshall"
 },
 {
     "id": 13,
@@ -164,7 +158,7 @@
     ",
     "category": "Abdominals (abs):",
     "difficulty":4 ,
-    "author": ""
+    "author": "Marshall"
 },
 {
     "id": 15,
@@ -324,4 +318,5 @@
     "category": "Calves",
     "difficulty":8 ,
     "author": "Alvin"
-},
+}
+]

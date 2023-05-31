@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // This is for the login/logout helper functions
-const hbs = exphbs.create({ helpers });
+//const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: 'Super secret secret',
@@ -25,7 +25,7 @@ const sess = {
 app.use(session(sess));
 
 // defining the view engine for express
-app.engine('handlebars', hbs.engine);
+app.engine('handlebars', exphbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
