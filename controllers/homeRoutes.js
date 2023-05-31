@@ -5,7 +5,7 @@ const checkLoggedIn = (req, res, next) => {
   if (req.session.loggedin) {
     next();
   } else {
-    res.redirect('/login');
+    res.redirect('api/users/login');
   }
 };
 
