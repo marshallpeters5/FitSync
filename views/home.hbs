@@ -1,0 +1,28 @@
+{{#extend "layout/main"}}
+  {{#content "body"}}
+    <div class="container">
+      <h1>Welcome to FitSync</h1>
+      <p>Get fit and stay in shape with our exercise tracking app.</p>
+
+      <ul>
+        {{#each exercises as |exercise|}}
+          <li>
+            <h3>{{exercise.name}}</h3>
+            <p>{{exercise.description}}</p>
+            <p>Author: {{exercise.User.name}}</p>
+          </li>
+        {{/each}}
+      </ul>
+
+      <!-- Pagination links -->
+      <div class="pagination">
+        {{#if hasNextPage}}
+          <a href="/?page={{nextPage}}">Next</a>
+        {{/if}}
+        {{#if hasPrevPage}}
+          <a href="/?page={{prevPage}}">Previous</a>
+        {{/if}}
+      </div>
+    </div>
+  {{/content}}
+{{/extend}}
