@@ -28,9 +28,8 @@ Exercise.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    author: {
+    author_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       references: {
         model: User,
         key: 'id',
@@ -45,7 +44,5 @@ Exercise.init(
     modelName: 'exercise',
   }
 );
-
-Exercise.belongsTo(User, { foreignKey: 'author' });
 
 module.exports = Exercise;
