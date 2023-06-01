@@ -10,8 +10,8 @@ const checkLoggedIn = (req, res, next) => {
 };
 
 // Home route. //
-router.get('/', checkLoggedIn, (req, res) => {
-  res.render('./views/home.hbs');
+router.get('/', (req, res) => {
+  res.render('home');
 });
 
 module.exports = router;
