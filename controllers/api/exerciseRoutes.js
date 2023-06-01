@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Exercise } = require("../../models");
+const { Exercise } = require('../../models');
 
 // Middleware for authorization check
 const checkAuthorization = async (req, res, next) => {
@@ -25,15 +25,19 @@ const checkAuthorization = async (req, res, next) => {
   };
   
 // Get all exercises
-router.get("/", async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const exercises = await Exercise.findAll();
-    res.json(exercises);
+    const exercises = await Exercise.findAll({
+      order: [['createdAt', 'DESC']],
+      limit: 5,
+    });
+    res.render('homepage', { exercises });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Failed to fetch exercises" });
+    res.status(500).json({ error: 'Failed to fetch exercises' });
   }
 });
+
 
 // Get a specific exercise by ID. //
 router.get("/:id", async (req, res) => {
