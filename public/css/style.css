@@ -1,0 +1,28 @@
+:root {
+    --red4: #d50000;
+    --lightred: #ffebee;
+    --red: #f44336;
+    --black: #000000;
+ }
+
+ .brand-logo {
+    font-family: righteous;
+ }
+
+ body {
+    background-color: var(--lightred);
+ }
+
+ #welcome {
+    font-family: sans-serif;
+ }
+
+nav {
+    background-color: var(--red4);
+}
+
+h1 {
+
+    color: var(--red);
+}
+
