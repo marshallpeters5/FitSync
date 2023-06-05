@@ -1,0 +1,76 @@
+:root {
+    --red4: #d50000;
+    --lightred: #ffebee;
+    --red: #f44336;
+    --black: #000000;
+ }
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+
+ .brand-logo {
+    font-family: righteous;
+    margin-left: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px var(--black);
+ }
+
+ .brand-logo:hover {
+    color: var(--lightred);
+    text-shadow: 5px 5px 5px #b71c1c;
+}
+
+ #welcome_logo {
+    font-family: righteous;
+    text-shadow: 2px 2px 2px var(--black);
+ }
+
+ body {
+    background-color: var(--lightred);
+ }
+
+ #welcome {
+    font-family: sans-serif;
+    /* display: flex; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5%;
+    font-weight: bold;
+ }
+
+ #intro {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+nav {
+    background-color: var(--red4);
+    flex-shrink: 0;
+}
+
+h1 {
+
+    color: var(--red);
+}
+
+footer {
+
+    background-color: var(--red4);
+    color: var(--lightred);
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}

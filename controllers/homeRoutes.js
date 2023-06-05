@@ -3,15 +3,15 @@ const { Exercise } = require('../models');
 const router = express.Router();
 
 const checkLoggedIn = (req, res, next) => {
-  if (req.session.loggedin) {
+  if (req.session.logged_in) {
     next();
   } else {
-    res.redirect('/api/users/login');
+    res.redirect('api/users/login');
   }
 };
 
-// Home route. //
-router.get('/', (req, res) => {
+// Home route
+router.get('/', checkLoggedIn, (req, res) => {
   res.render('home');
 });
 // Login Link
