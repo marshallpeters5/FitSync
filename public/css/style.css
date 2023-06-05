@@ -58,6 +58,7 @@
 
 nav {
     background-color: var(--red4);
+    flex-shrink: 0;
 }
 
 h1 {
@@ -69,7 +70,6 @@ footer {
 
     background-color: var(--red4);
     color: var(--lightred);
-    /* margin: 20px; */
     padding: 10px;
     text-align: center;
     flex-shrink: 0;
