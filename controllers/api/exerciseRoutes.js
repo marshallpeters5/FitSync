@@ -25,13 +25,25 @@ const checkAuthorization = async (req, res, next) => {
   };
   
 // Get all exercises
+// router.get('/', async (req, res) => {
+//   try {
+//     const exercises = await Exercise.findAll({
+//       order: [['createdAt', 'DESC']],
+//       limit: 5,
+//     });
+//     res.render('homepage', { exercises });
+    
+//   } catch (err) {
+//     console.error(err);
+//     res.status(500).json({ error: 'Failed to fetch exercises' });
+//   }
+// });
+
 router.get('/', async (req, res) => {
   try {
-    const exercises = await Exercise.findAll({
-      order: [['createdAt', 'DESC']],
-      limit: 5,
-    });
-    res.render('homepage', { exercises });
+    const exercises = await Exercise.findAll();
+    res.status(200).json(exercises);
+    
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to fetch exercises' });
