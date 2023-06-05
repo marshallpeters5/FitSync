@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { Exercise } = require('../../models');
+const { Op } = require('sequelize');
 
 // Middleware for authorization check
 const checkAuthorization = async (req, res, next) => {
@@ -31,13 +32,12 @@ router.get('/', async (req, res) => {
       order: [['createdAt', 'DESC']],
       limit: 5,
     });
-    res.render('homepage', { exercises });
+    res.render('home', { exercises });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Failed to fetch exercises' });
   }
 });
-
 
 // Get a specific exercise by ID. //
 router.get("/:id", async (req, res) => {

@@ -20,6 +20,11 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Route for rendering the login form
+router.get("/login", (req, res) => {
+  res.render("login");
+});
+
 // Route for user login
 router.post("/login", async (req, res) => {
   try {
@@ -47,7 +52,7 @@ router.post("/login", async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       // Respond with the user data and a success message
-      res.json({ user: userData, message: "You are now logged in!" });
+      res.redirect('/');
     });
   } catch (err) {
     // If an error occurs, respond with the error
@@ -56,11 +61,12 @@ router.post("/login", async (req, res) => {
 });
 
 // Route for user logout
-router.post("/logout", (req, res) => {
+router.get("/logout", (req, res) => {
   if (req.session.logged_in) {
-    // Destroy the session and respond with a success status
+    // Destroy the session and redirect to the login page
     req.session.destroy(() => {
-      res.status(204).end();
+      res.clearCookie('connect.sid'); // Clear the session cookie
+      res.redirect('/login');
     });
   } else {
     // If no session is found, respond with a not found status
