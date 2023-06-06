@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Sign Up</h2>
-  <form action="/api/users" method="POST">
+  <form id="signup-form" action="/api/users" method="POST">
     <div class="input-field">
       <input type="text" id="name" name="name" required>
       <label for="name" class="placeholder">Name</label>
@@ -31,6 +31,22 @@
           placeholder.classList.remove('active');
         }
       });
+    });
+
+    const signupForm = document.getElementById('signup-form');
+    signupForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+
+      if (!nameInput.value || !emailInput.value || !passwordInput.value) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      // Proceed with form submission and redirect to homepage
+      window.location.href = "/";
     });
   });
 </script>

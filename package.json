@@ -13,7 +13,7 @@
   "scripts": {
     "sql": "mysql -u root -p",
     "seed": "node seeds/seed.js",
-    "start": "node server.js"
+    "start": "npm run seed && node server.js"
   },
   "name": "fitsync",
   "description": "",
