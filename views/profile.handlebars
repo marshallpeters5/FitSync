@@ -1,24 +1,81 @@
-<div class="row center">
-  <div class="col-auto">
-    <h2>Welcome, {{user.name}}!</h2>
+<div class="row">
+  <div class="col s12">
+    <h2>Welcome, {{user_name}}!</h2>
   </div>
 </div>
 
-<div class="row mt-4 center">
-  <div class="col-md-6">
+<div class="row mt-4">
+  <div class="col s12 m6 offset-m3">
     <h3>Create an Exercise</h3>
-
-    <form class="form new-project-form">
-      <div class="form-group">
-        <label for="exercise-name">Exercise Name</label>
-        <input class="form-input" type="text" id="exercise-name" name="exercise-name" />
+    <form class="new-project-form">
+      <div class="input-field">
+        <input class="validate" type="text" id="exercise-name" name="exercise-name">
+        <label for="exercise-name" class="placeholder">Exercise Name</label>
       </div>
-      <div class="form-group">
-        <label for="exercise-desc">Description</label>
-        <textarea class="form-input" id="exercise-desc" name="exercise-desc"></textarea>
+      <div class="input-field">
+        <textarea class="materialize-textarea validate" id="exercise-desc" name="exercise-desc"></textarea>
+        <label for="exercise-desc" class="placeholder">Description</label>
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+      <div class="input-field">
+        <input class="validate" type="text" id="muscle-group" name="muscle-group">
+        <label for="muscle-group" class="placeholder">Muscle Group</label>
+      </div>
+      <div class="input-field">
+        <div class="input-dropdown">
+          <input type="text" id="difficulty" name="difficulty" class="dropdown-trigger" data-target="difficulty-dropdown">
+          <label for="difficulty" class="placeholder">Difficulty</label>
+          <ul id="difficulty-dropdown" class="dropdown-content">
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+            <li><span>9</span></li>
+            <li><span>10</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="input-field">
+        <button type="submit" class="btn waves-effect waves-light">Create</button>
       </div>
     </form>
   </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.new-project-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const exerciseName = document.getElementById('exercise-name').value.trim();
+      const exerciseDesc = document.getElementById('exercise-desc').value.trim();
+      const difficulty = document.getElementById('difficulty').value;
+      const muscleGroup = document.getElementById('muscle-group').value.trim();
+
+      if (!exerciseName || !exerciseDesc || !difficulty || !muscleGroup) {
+        alert('Please fill in all fields.');
+        return;
+      }
+    });
+
+    const placeholders = document.querySelectorAll('.placeholder');
+    placeholders.forEach(function(placeholder) {
+      const input = placeholder.previousElementSibling;
+      input.addEventListener('focus', function() {
+        placeholder.classList.add('active');
+      });
+      input.addEventListener('blur', function() {
+        if (!input.value) {
+          placeholder.classList.remove('active');
+        }
+      });
+    });
+
+    const difficultySelect = document.getElementById('difficulty');
+    M.FormSelect.init(difficultySelect);
+  });
+</script>
