@@ -2,7 +2,7 @@ const userData = [
   {
     id: 1,
     name: 'Marshall Peters',
-    email: 'MP@hotmail.com',
+    email: 'marshall.peters01@gmail.com',
     password: 'password1',
     is_admin: true
   },
