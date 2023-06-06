@@ -1,16 +1,6 @@
     <div class="container center">
       <h1 id="welcome">Welcome to <div id="welcome_logo"> FitSync</div></h1>
       <p id= intro >Get fit and stay in shape with our exercise tracking app.{{exercise.name}}</p>
-      <ul>
-        {{#each exercises as |exercise|}}
-          <li>
-            <h3>{{exercise.name}}</h3>
-            <p>{{exercise.description}}</p>
-            <p>Author: {{exercise.User.name}}</p>
-          </li>
-        {{/each}}
-      </ul>
-
       <!-- Pagination links -->
       <div class="pagination">
         {{#if hasNextPage}}
