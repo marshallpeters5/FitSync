@@ -61,9 +61,19 @@ nav {
     flex-shrink: 0;
 }
 
-h1 {
+h1, h2, h3 {
 
     color: var(--red);
+    font-weight: bold;
+}
+
+.form-group {
+
+   margin-left: 20px;
+}
+
+.exercise-logo {
+   margin-bottom: 50px;
 }
 
 footer {
