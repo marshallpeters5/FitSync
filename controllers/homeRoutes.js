@@ -12,34 +12,12 @@ const checkLoggedIn = (req, res, next) => {
 
 // Home route
 router.get('/', checkLoggedIn, (req, res) => {
-  res.render('home');
-});
-// Login Link
-router.get('/login', (req, res) => {
-  res.render('login');
+  res.render('home', {logged_in: req.session.logged_in });
 });
 
 // Profile link
 router.get('/profile', (req, res) => {
-  res.render('profile');
+  res.render('profile', {logged_in: req.session.logged_in });
 });
-
-//Exercise link
-router.get('/exercise', async (req, res) => {
-  try {
-    // Find exercise by id
-    const exerciseData = await Exercise.findAll().catch((err) => { 
-      res.json(err);
-    });
-
- 
-
-  const exercises = exerciseData.map((exercise) => exercise.get({ plain: true }));
-    res.render('exercise',  { exercises });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
- 
 
 module.exports = router;

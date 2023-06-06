@@ -42,12 +42,13 @@ const checkAuthorization = async (req, res, next) => {
 
 router.get('/', async (req, res) => {
   try {
-    const exercises = await Exercise.findAll();
-    res.status(200).json(exercises);
-    
+    const exerciseData = await Exercise.findAll().catch((err) => { 
+      res.json(err);
+    });
+  const exercises = exerciseData.map((exercise) => exercise.get({ plain: true }));
+    res.render('exercise', {exercises, logged_in: req.session.logged_in });
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Failed to fetch exercises' });
+    res.status(500).json(err);
   }
 });
 

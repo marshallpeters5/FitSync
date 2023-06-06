@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>FitSync - Homepage</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
 </head>
 <body>
@@ -11,9 +11,14 @@
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">FitSync</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if logged_in}}
         <li><a href="/profile">Profile</a></li>
-        <li><a href="/exercise">Exercises</a></li>
-        <li><a href="/login">Logout</a></li>
+        <li><a href="/api/exercise/">Exercises</a></li>
+        <li><a href="/api/users/logout">Logout</a></li>
+        {{else}}
+        <a href="/api/users/login">Login</a>
+        {{/if}}
+
       </ul>
     </div>
   </nav>
@@ -21,10 +26,6 @@
   <main>
     {{{body}}}
   </main>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-
- <footer>Thanks for working out with us!</footer>
+ <footer class="center">Thanks for working out with us!</footer>
 </html>

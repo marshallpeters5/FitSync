@@ -20,6 +20,11 @@ router.post("/", async (req, res) => {
   }
 });
 
+// Route for rendering the signup form
+router.get("/signup", (req, res) => {
+  res.render("signup");
+});
+
 // Route for rendering the login form
 router.get("/login", (req, res) => {
   res.render("login");
@@ -52,7 +57,7 @@ router.post("/login", async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       // Respond with the user data and a success message
-      res.redirect('/');
+      res.render('home', {logged_in: true});
     });
   } catch (err) {
     // If an error occurs, respond with the error
@@ -66,7 +71,7 @@ router.get("/logout", (req, res) => {
     // Destroy the session and redirect to the login page
     req.session.destroy(() => {
       res.clearCookie('connect.sid'); // Clear the session cookie
-      res.redirect('/login');
+      res.redirect('/api/users/login');
     });
   } else {
     // If no session is found, respond with a not found status

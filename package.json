@@ -11,6 +11,8 @@
     "sequelize": "^6.31.1"
   },
   "scripts": {
+    "sql": "mysql -u root -p",
+    "seed": "node seeds/seed.js",
     "start": "node server.js"
   },
   "name": "fitsync",
